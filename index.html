@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <style>
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+        .panel1{
+            background-image: url('./images/et.jpg');
+            height: 100vh;
+            background-size: cover;
+        }
+
+        .panel2{
+            background-image: url('./images/er2.jpg') !important;
+            height: 100vh;
+            background-size: cover;
+        }
+
+        .panel3{
+            background-image: url('./images/et3.jpg') !important;
+            height: 100vh;
+            background-size: cover;
+        }
+
+        .panel {
+            background-image: url('./images/et.jpg');
+            -webkit-animation: imageAnimation 36s linear infinite 0s;
+    -moz-animation: imageAnimation 36s linear infinite 0s;
+    -o-animation: imageAnimation 36s linear infinite 0s;
+    -ms-animation: imageAnimation 36s linear infinite 0s;
+    animation: imageAnimation 36s linear infinite 0s;
+    transition: background-image 2s
+        }
+
+        @-webkit-keyframes imageAnimation { 
+	0% {
+	    opacity: 0;
+	    -webkit-animation-timing-function: ease-in;
+	}
+	8% {
+	    opacity: 1;
+	    -webkit-animation-timing-function: ease-out;
+	}
+}
+    </style>
+</head>
+<body>
+    <div id="wrapper" style="height: 100vh">
+        <div id="panel" class="panel panel1" style="width: 100%;">
+            <div style="width:1200px; margin: 0 auto; padding: 30px 15px;">
+                <header>
+                    <img class="navbar-logo" src="./images/logoetnograf.png" width="125px" height="40px" alt="logo" style="display: block; float: left;">
+                    <ul style="color:#fff; display: block; float: right; line-height: 40px;">
+                        <li style="display:inline-block;"><a href="http://app.mehmet-y.tech/" style="text-decoration: none; color: #fff;">Giriş Yap</a></li>
+                        <li style="display:inline-block; margin-left: 20px;"><a href="http://app.mehmet-y.tech/" style="text-decoration: none; color: #fff;">Katıl</a></li>
+                    </ul>
+                </header>
+                <div style="clear: both;">
+
+                <div class="animate__animated animate__fadeInDown" style="color: #fff;
+
+                margin: 0 auto;
+                display: block;
+                text-align: center;
+                padding-top: 30vh;">
+                <h1 style="  font-size: 80px; font-weight: 700;">İlk defa ve bir kere olacak
+olayların peşinde</h1>
+                <p style="font-size: 42px; margin-top: 40px;">Yolculuğa hoş geldin.</p>
+                <a href="http://app.mehmet-y.tech/" style="margin-top: 40px; display: block; text-decoration: none; background: #fff; line-height:50px;color: black; width: 200px; height: 50px; margin-right: auto; margin-left: auto;">
+                    Yolculuğa başla
+                </a>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div style="opacity: 0; height:0px; display: none;">
+        <img src="./images/er2.jpg" alt="">
+        <img src="./images/et3.jpg" alt="">
+        <img src="./images/et.jpg" alt="">
+
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/egjs-flicking/3.6.3/flicking.pkgd.min.js" integrity="sha512-5pJ6oMF5LP/5MNkjLeq3rgNKV1DAqvzOCrym3yepPGHuUy+5BXHHFWGbAU60pWMIYl2QeGsfQUa5v5qyBdYgxw==" crossorigin="anonymous"></script>
+<script>
+       setTimeout(() => {
+        var panel = document.getElementById("panel");
+          panel.classList += " panel2";
+
+        }, 5000);
+       setTimeout(() => {
+             var panel = document.getElementById("panel");
+            panel.classList += " panel3";
+
+         }, 10000);
+    </script>   
+</body>
+</html>

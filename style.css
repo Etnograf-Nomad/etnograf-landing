@@ -1,0 +1,130 @@
+
+@font-face {
+	font-family: "Roboto";
+	src: url("/assets/Roboto-Bold.ttf") format("truetype"),
+}
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+}
+
+.main {
+	display: grid;
+	height: 100vh;
+	background-image: url("/assets/konser.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin: 0;
+	overflow-y: scroll;
+}
+
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 2rem;
+
+}
+.navbar-logo {
+	display: block;
+	margin-left: 20px;
+	width: 350px;
+	height: 100px;
+}
+
+.navbar-buttons {
+	display: block;
+	margin-right: 2rem;
+
+}
+
+.navbar-buttons button{
+	width: 10rem;
+	height: 3rem;
+	background: transparent;
+	border: none;
+	color: #6d4da5;
+	font-size: 1.5rem;
+	outline: none;
+	margin-left: 10px;
+}
+
+.navbar-buttons button:last-child{
+	border: solid 5px #6d4da5;
+
+}
+
+
+
+.header {
+	display: block;
+	margin: 50px;
+	font-size: 5rem;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 400;
+	color: #EB5500;
+}
+
+.header p {
+	margin-top: 1rem;
+	font-size: 2rem;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+	.header {
+		margin-left: 2rem;
+		margin-right: 2rem;
+		font-size: 4rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+
+
+	.navbar-logo {
+		width: 160px;
+		height: 50px;
+	}
+
+	.navbar-buttons {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+
+
+	}
+
+	.navbar-buttons button{
+		width: 6rem;
+		height: 2rem;
+		border: none;
+		background: transparent;
+		color: #6d4da5;
+		font-size: 1rem;
+		outline: none;
+		margin-bottom: 10px;
+	}
+
+	.navbar-buttons button:last-child{
+		border: solid 2px #6d4da5;
+
+	}
+
+}
+
+
+@media screen and (max-width: 320px) {
+
+	.header {
+		margin-left: 2rem;
+		margin-right: 2rem;
+		font-size: 3rem;
+	}
+}
