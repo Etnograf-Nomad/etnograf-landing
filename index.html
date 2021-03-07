@@ -1,158 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-    <style>
-        /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-body {
-    font-family: 'Roboto', sans-serif;
+  <title>Etnograf Nomad</title>
 
-}
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
 
-        .panel1{
-            background-image: url('./images/et.jpg');
-            height: 100vh;
-            background-size: cover;
-        }
-
-        .panel2{
-            background-image: url('./images/er2.jpg') !important;
-            height: 100vh;
-            background-size: cover;
-        }
-
-        .panel3{
-            background-image: url('./images/et3.jpg') !important;
-            height: 100vh;
-            background-size: cover;
-        }
-
-        .panel {
-            background-image: url('./images/et.jpg');
-            -webkit-animation: imageAnimation 36s linear infinite 0s;
-    -moz-animation: imageAnimation 36s linear infinite 0s;
-    -o-animation: imageAnimation 36s linear infinite 0s;
-    -ms-animation: imageAnimation 36s linear infinite 0s;
-    animation: imageAnimation 36s linear infinite 0s;
-    transition: background-image 2s
-        }
-
-        @-webkit-keyframes imageAnimation { 
-	0% {
-	    opacity: 0;
-	    -webkit-animation-timing-function: ease-in;
-	}
-	8% {
-	    opacity: 1;
-	    -webkit-animation-timing-function: ease-out;
-	}
-}
-    </style>
 </head>
+
 <body>
-    <div id="wrapper" style="height: 100vh">
-        <div id="panel" class="panel panel1" style="width: 100%;">
-            <div style="width:1200px; margin: 0 auto; padding: 30px 15px;">
-                <header>
-                    <img class="navbar-logo" src="./images/logoetnograf.png" width="125px" height="40px" alt="logo" style="display: block; float: left;">
-                    <ul style="color:#fff; display: block; float: right; line-height: 40px;">
-                        <li style="display:inline-block;"><a href="http://app.mehmet-y.tech/" style="text-decoration: none; color: #fff;">Giriş Yap</a></li>
-                        <li style="display:inline-block; margin-left: 20px;"><a href="http://app.mehmet-y.tech/" style="text-decoration: none; color: #fff;">Katıl</a></li>
-                    </ul>
-                </header>
-                <div style="clear: both;">
 
-                <div class="animate__animated animate__fadeInDown" style="color: #fff;
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://www.etnograf.app/">
+        <img src="./images/logo.png" alt="Etnograf" class="main-logo"/>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">BİZ KİMİZ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ETNOGRAF NOMAD</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">EĞİTİM</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">NEREDE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">EKİP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">İLETİŞİM</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-                margin: 0 auto;
-                display: block;
-                text-align: center;
-                padding-top: 30vh;">
-                <h1 style="  font-size: 80px; font-weight: 700;">İlk defa ve bir kere olacak
-olayların peşinde</h1>
-                <p style="font-size: 42px; margin-top: 40px;">Yolculuğa hoş geldin.</p>
-                <a href="http://app.mehmet-y.tech/" style="margin-top: 40px; display: block; text-decoration: none; background: #fff; line-height:50px;color: black; width: 200px; height: 50px; margin-right: auto; margin-left: auto;">
-                    Yolculuğa başla
-                </a>
-                </div>
-            </div>
+  <!-- Page Slider -->
+  <div id="main-header" class="zoom-in"></div>
+
+  <div id="text-header">
+    <h1>İlk defa ve bir kere olacak <br>
+      olayların peşinde</h1>
+    <p>Yolculuğa hoş geldin.</p>
+    <a href="http://app.mehmet-y.tech/">
+      YOLCULUĞA BASLA
+    </a>
+  </div>
+
+  <!-- Page Slider -->
+  <div id="second-header" class="zoom-in-second">
+      <h2 class="active-second-header">Deneyimlerini bir araştırma ve öğrenme aracı haline getirmeyi hedefleyenler</h2>
+      <h2>Yaratıcı etkiyi tasarlamak için yola çıkanlar</h2>
+      <h2>Deneyimlerini bir araştırma ve öğrenme aracı haline getirmeyi hedefleyenler</h2>
+      <h2>Farklı bir düzeyde deneyimlerini birleştirenler Etnograf Nomad’da buluşuyor. </h2>
+  </div>
+
+  <div id="third-header">
+    <div class="third-header-item third-header--first">
+      <div class="third-item-header">
+          <div class="third-item-header--logo">
+            <img src="./images/svgs/collector.svg" />
+          </div>
+        <p class="third-item-main-title">Deneyim Kollektoru</p>
+        <a class="detail-opener" data-target="third-header--first">Deneyimden Ogrenin</a>
+      </div>
+      <div class="third-item-content" style="display: none">
+        <div class="holder">
+          <img src="./images/svgs/nomad-detail.svg" alt="">
+        </div>
+        <div class="holder">
+          <h3>Etnograf Nomad</h3>
+          <p>
+            Deneyimlerinizi deneyim kolektörü aracılığıyla  bir öğrenme fırsatına  çeviriyor. Katılımcı gözlem yöntemini eğlenceli bir bilgi kaynağı haline dönüştürürken, hayatı daha derinden, zenginleştirerek, çoğaltarak yaşamak isteyenlere benzersiz bir yolculuk  fırsatı veriyor.           </p>
+        </div>
+        <div class="holder">
+          <h3>Deneyim Kolektörü</h3>
+
+          <p> ister akademik bir araştırmada, ister kişisel bir gelişim yolculuğunda sizi farklı keşiflere taşıyor. Deneyimlerinizi işlerken veya araştırmalarınızda  kullanabileceğiniz soruları oluşturmanızı sağlayan araçları sizlerle paylaşıyor. </p>
         </div>
       </div>
-      <div style="opacity: 0; height:0px; display: none;">
-        <img src="./images/er2.jpg" alt="">
-        <img src="./images/et3.jpg" alt="">
-        <img src="./images/et.jpg" alt="">
-
+    </div>
+    <div class="third-header-item third-header--second">
+      <div class="third-item-header">
+        <div class="third-item-header--logo">
+          <img src="./images/svgs/sociogram.svg" />
+        </div>
+        <p class="third-item-main-title">Sosyogram</p>
+        <a class="detail-opener" data-target="third-header--second">Bağlarla keşfet</a>
       </div>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/egjs-flicking/3.6.3/flicking.pkgd.min.js" integrity="sha512-5pJ6oMF5LP/5MNkjLeq3rgNKV1DAqvzOCrym3yepPGHuUy+5BXHHFWGbAU60pWMIYl2QeGsfQUa5v5qyBdYgxw==" crossorigin="anonymous"></script>
-<script>
-       setTimeout(() => {
-        var panel = document.getElementById("panel");
-          panel.classList += " panel2";
+      <div class="third-item-content" style="display: none">
+        A
+      </div>
+    </div>
+    <div class="third-header-item third-header--third">
+      <div class="third-item-header">
+        <div class="third-item-header--logo">
+          <img src="./images/svgs/pad.svg" />
+        </div>
+        <p class="third-item-main-title">Zihin Defteri</p>
+        <a class="detail-opener" data-target="third-header--third">Yaratici Notlariniz Icin</a>
+      </div>
+      <div class="third-item-content" style="display: none">
+        A
+      </div>
+    </div>
+  </div>
 
-        }, 5000);
-       setTimeout(() => {
-             var panel = document.getElementById("panel");
-            panel.classList += " panel3";
+  <div id="detail">
 
-         }, 10000);
-    </script>   
+  </div>
+
+  <div id="where">
+    <img src="./images/svgs/bubbles.svg" alt="">
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./script.js"></script>
+
 </body>
+
 </html>

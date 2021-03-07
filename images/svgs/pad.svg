@@ -1,0 +1,28 @@
+<svg
+        id="Layer_1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 198.43 198.43"
+        >
+<rect x="29.21" y="29.21" width="37.73" height="140.01" />
+<rect
+x="105.92"
+y="3.64"
+width="37.73"
+height="88.87"
+transform="translate(172.86 -76.71) rotate(90)"
+/>
+<rect
+x="105.92"
+y="54.78"
+width="37.73"
+height="88.87"
+transform="translate(223.99 -25.57) rotate(90)"
+/>
+<rect
+x="105.92"
+y="105.92"
+width="37.73"
+height="88.87"
+transform="translate(275.13 25.57) rotate(90)"
+/>
+        </svg>
